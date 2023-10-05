@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+ol,
+button {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+.middle_content {
+    padding: 20px;
+}
+
+img {
+    width: 285px;
+    height: 100px;
+    margin-left: 530px;
+}
+
+.signup_form {
+    margin: 0 auto;
+    width: 420px;
+    height: 620px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+
+body {
+    color: #1c1e21;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.top_content {
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+.line {
+    color: gray;
+}
+
+.top_content p {
+    color: gray;
+}
+
+.name_surn input {
+    width: 50%;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 12px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    outline: none;
+    /* margin-top: 10px; */
+}
+
+.name_surn {
+    display: flex;
+    gap: 12px;
+}
+
+.mail_pass input {
+    font-size: 15px;
+    line-height: 16px;
+    border-color: #ccd0d5;
+    width: 392px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+    padding: 11px;
+    margin-top: 14px;
+}
+
+
+select {
+    border-radius: 4px;
+    color: #1c1e21;
+    font-size: 15px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 20px;
+    padding: 0 8px;
+    padding-right: 20px;
+    width: 33%;
+    border: 1px solid #ccd0d5;
+}
+
+.three_select {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.gen1 {
+    box-sizing: border-box;
+    color: #1c1e21;
+    font-size: 15px;
+    line-height: 36px;
+    padding: 0 28px 0 10px;
+    border: 1px solid #ccd0d5;
+    width: 32%;
+    display: flex;
+    gap: 50px;
+    border-radius: 5px;
+}
+
+.gen2 {
+    box-sizing: border-box;
+    color: #1c1e21;
+    font-size: 15px;
+    line-height: 36px;
+    padding: 0 28px 0 10px;
+    border: 1px solid #ccd0d5;
+    width: 32%;
+    display: flex;
+    gap: 35px;
+    border-radius: 5px;
+
+}
+
+.gen3 {
+    box-sizing: border-box;
+    color: #1c1e21;
+    font-size: 15px;
+    line-height: 36px;
+    padding: 0 28px 0 10px;
+    border: 1px solid #ccd0d5;
+    width: 32%;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.gen {
+    display: flex;
+    gap: 9px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.dob {
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.para p,
+a {
+    color: #777;
+    font-size: 12px;
+    width: auto;
+    margin-bottom: 10px;
+    line-height: 16px;
+}
+
+.mail_pass input {
+    width: 100%;
+}
+
+.sign {
+    height: 36px;
+    width: 200px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #00a400;
+    color: white;
+}
+
+.btn1 {
+    text-align: center;
+}
+
+.footerlink {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footerlink a {
+    color: #1877f2;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+
+}
+
+.genp {
+    margin-top: 10px;
+}

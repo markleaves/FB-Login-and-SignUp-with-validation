@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="facebook-new.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One&family=Fira+Sans&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+    <title>Signup form fb</title>
+</head>
+<style>
+    .fname_content {
+        opacity: 0;
+    }
+
+    .fname_content {
+        color: red;
+    }
+</style>
+
+<body>
+    <img src="facebooklogo.svg" alt="fblogo">
+    <div class="signup_form">
+        <div class="top_content">
+            <h1>Create a new account</h1>
+            <p>I'ts quick and easy.</p>
+        </div>
+        <hr class="line">
+
+        <div class="middle_content">
+            <form action="" id="form">
+                <div class="name_surn">
+                    <input type="text" id="fname" placeholder="First name">
+                    <input type="text" id="sname" placeholder="Surname">
+
+                    <!-- <span class="fname_content">cannot be blank</span> -->
+                </div>
+                <div class="mail_pass">
+                    <input type="text" id="mnumber" placeholder="MobileNumber or Email address">
+                    <input type="password" id="npass" placeholder="New Password">
+                </div>
+                <div class="error">
+
+                </div>
+                <p class="dob">Date of birth</p>
+
+                <div class="three_select">
+                    <select name="birth_day" id="sdate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="birth_month" id="month">
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">July</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                    <select name="birth_year" id="year">
+                        <option value="2000">2000</option>
+                        <option value="2000">2001</option>
+                        <option value="2000">2002</option>
+                        <option value="2000">2003</option>
+                        <option value="2000">2004</option>
+                        <option value="2000">2004</option>
+                        <option value="2000">2005</option>
+                        <option value="2000">2006</option>
+                        <option value="2000">2007</option>
+                        <option value="2000">2008</option>
+                    </select>
+                </div>
+                <p class="genp">Gender</p>
+
+                <div class="gen">
+
+                    <div class="gen1">
+                        <label for="male">Male</label><input type="radio" name="gen" id="ma" value="male">
+                    </div>
+
+                    <div class="gen2">
+                        <label for="male">Female</label><input type="radio" name="gen" id="fe." value="female">
+                    </div>
+
+                    <div class="gen3">
+                        <label for="male">Custom</label><input type="radio" name="gen" id="cus" value="custom">
+                    </div>
+
+                </div>
+                <div class="para">
+                    <p>People who use our service may have uploaded your contact information to Facebook.
+                        <a href="#">Learn more.</a>
+                    </p>
+                    <p>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.
+                        You may receive SMS notifications from us and can opt out at any time.</p>
+
+                    <div class="btn1"> <button class="sign">Sign Up</button>
+                    </div>
+            </form>
+            <div class="footerlink">
+                <a href="#">Already have an account?</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        let fname = document.getElementById("fname");
+        let sname = document.getElementById("sname");
+        let mnumber = document.getElementById("mnumber");
+        let npass = document.getElementById("npass");
+        let error = document.getElementsByClassName("error");
+        let form = document.getElementById("form");
+
+        // localStorage.setItem("keyss",(fname));
+
+        form.addEventListener("submit", function (forms) {
+            forms.preventDefault();
+
+
+            check(fname, 0, "Firstname cannot be black");
+            check(sname, 1, "Surname cannot be black");
+            check(mnumber, 2, "MobileNumber cannot be black");
+            check(npass, 3, "Newpassword cannot be black");
+
+        })
+
+        let check = function (id, serial, message) {
+            if (id.value.trim() === "") {
+                id.style.border = "1px solid red";
+                // id.style.opacity = "1";
+                // id[serial].innerHTML=message;
+
+                // check();
+                
+            }
+            else{  
+            location.href="login.html";
+            }
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
